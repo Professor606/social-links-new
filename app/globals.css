@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+  --bag: #131313;
+  --fag: #fff;
+  --card: #1C1C1C;
+  --incard: #2C2C2C;
+  --greena: #0088a9;
+}
+
+@theme {
+  --color-bag: var(--bag);
+  --color-fag: var(--fag);
+  --color-card: var(--card);
+  --color-incard: var(--incard);
+  --color-greena: var(--greena);
+}
+
+body {
+  color: var(--fag);
+  background: var(--bag);
+  font-family: var(--font-oswald), sans-serif;
+}
+
+@layer base {
+  * {
+    @apply transition-all duration-300;
+  }
+}
