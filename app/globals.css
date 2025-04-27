@@ -6,6 +6,10 @@
   --card: #1C1C1C;
   --incard: #2C2C2C;
   --greena: #0088a9;
+  --linkedin: #0A5CB0;
+  --telegram: #2890C3;
+  --instagram: #E1306C;
+  --spotify: #1BC258;
 }
 
 @theme {
@@ -14,6 +18,11 @@
   --color-card: var(--card);
   --color-incard: var(--incard);
   --color-greena: var(--greena);
+  --color-linkedin: var(--linkedin);
+  --color-telegram: var(--telegram);
+  --color-instagram: var(--instagram);
+  --color-spotify: var(--spotify);
+  --color-github: var(--greena);
 }
 
 body {
@@ -22,8 +31,25 @@ body {
   font-family: var(--font-oswald), sans-serif;
 }
 
+@layer components{
+  .incard{
+    @apply bg-incard py-[0.75rem] w-[17rem] sm:w-[19rem] hover:w-[15rem] justify-center flex items-center rounded-lg mt-[0.5rem];
+  }
+  .link {
+    @apply font-medium text-xl hover:scale-110;
+  }
+}
+
 @layer base {
   * {
     @apply transition-all duration-300;
   }
+}
+
+@utility flex-center{
+  @apply flex justify-evenly flex-col items-center content-center;
+}
+
+@utility my-shadow{
+  @apply backdrop-blur-md shadow-[0px_3px_25px_rgba(0,136,169,0.6)];
 }
