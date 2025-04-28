@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Card = () => { 
     return (
-        <div className="flex-center bg-card rounded-lg mx-0 mt-14 w-[75%] p-4 max-w-[400px] my-shadow">
+        <div className="flex-center bg-card rounded-lg my-12 w-[75%] p-4 max-w-96 my-shadow">
 
           <Image className="w-[30%] max-w-24 rounded-full hover:scale-110"
           width="0"

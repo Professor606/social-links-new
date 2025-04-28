@@ -25,12 +25,6 @@
   --color-github: var(--greena);
 }
 
-body {
-  color: var(--fag);
-  background: var(--bag);
-  font-family: var(--font-oswald), sans-serif;
-}
-
 @layer components{
   .incard{
     @apply bg-incard py-[0.75rem] w-[17rem] sm:w-[19rem] hover:w-[15rem] justify-center flex items-center rounded-lg mt-[0.5rem];
@@ -43,6 +37,11 @@ body {
 @layer base {
   * {
     @apply transition-all duration-300;
+  }
+  body {
+    color: var(--fag);
+    background: var(--bag);
+    font-family: var(--font-oswald), sans-serif;
   }
 }
 
