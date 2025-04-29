@@ -19,9 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${oswald.variable}`}
-      >
+      <body className={`${oswald.variable}`}>
         {children}
       </body>
     </html>
